@@ -1,35 +1,24 @@
 {
   "build": {
-    "content": [
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "opbuild/functest-docs/sandbox/docs/github/**",
-          "**/includes/**"
-        ]
-      }
-    ],
+    "content":
+      [
+        {
+          "files": ["**/**.md"],
+          "exclude": ["**/obj/**", "**/**.vsdx"]
+        }
+      ],
     "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "opbuild/functest-docs/sandbox/docs/github/**",
-          "**/includes/**"
-        ]
-      }
+        {
+          "files": ["**/images/**"],
+          "exclude": ["**/obj/**"]
+        }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
-    "template": [],
-    "dest": "opbuild/functest-docs/sandbox/docs/github"
+    "externalReference": [
+    ],
+    "globalMetadata": {
+      "ROBOTS": "NOINDEX, NOFOLLOW"
+    },
+    "template": "op.html",
+    "dest": "optest/docs"
   }
 }
